@@ -1,0 +1,69 @@
+/* Reset and global styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #FFF1D0;
+    font-family: 'Bona Nova SC', sans-serif;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: url(/backGroundImage.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Responsive typography */
+.main-heading {
+    font-size: 15vw;
+    /* Responsive to viewport height */
+}
+
+.sub-heading {
+    font-size: 3.2vw;
+}
+
+.coming-soon {
+    font-size: 2vw;
+}
+
+.address {
+    font-size: 1.2vw;
+}
+
+/* Make it responsive for all devices */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 10vw;
+    }
+
+    .sub-heading {
+        font-size: 2.4vw;
+    }
+
+    .coming-soon {
+        font-size: 1.5vw;
+    }
+
+    .address {
+        font-size: 1vw;
+    }
+}
